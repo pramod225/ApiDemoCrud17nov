@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiDemo", "ApiDemo\ApiDemo.csproj", "{DA7A2C3A-3282-4238-9C37-39050C94F0FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiClient", "WebApiClient\WebApiClient.csproj", "{CA4782B8-1ACD-496D-9F7A-C92D7CA24411}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA7A2C3A-3282-4238-9C37-39050C94F0FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA7A2C3A-3282-4238-9C37-39050C94F0FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA7A2C3A-3282-4238-9C37-39050C94F0FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA7A2C3A-3282-4238-9C37-39050C94F0FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA4782B8-1ACD-496D-9F7A-C92D7CA24411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA4782B8-1ACD-496D-9F7A-C92D7CA24411}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA4782B8-1ACD-496D-9F7A-C92D7CA24411}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA4782B8-1ACD-496D-9F7A-C92D7CA24411}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {707ECB5A-A21C-40DA-A153-319E92893818}
+	EndGlobalSection
+EndGlobal

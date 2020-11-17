@@ -1,0 +1,40 @@
+﻿@model IEnumerable<WebApiClient.Models.ApiUser>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+</p>
+<table class="table" id="tblUser">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ApiUserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ApiUserAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ApiUserEmailId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ApiUserPassword)
+        </th>
+        <th></th>
+    </tr>
+
+</table>
+<script>
+    $(document).ready(function () {
+        $.getJSON("https://localhost:44301/Api/ApiUsers", function (data) {
+            $.each(data, function (key, value) {
+                var row = "<tr><td>" + value.ApiUserName + "</td><td>" + value.ApiUserAddress + "</td><td>" + value.ApiUserEmailId + "</td><td>" + value.ApiUserPassword + "</td></tr>";
+                $("#tblUser").append(row);
+            })
+        })
+    })
+</script>
